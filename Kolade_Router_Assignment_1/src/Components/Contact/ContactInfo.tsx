@@ -46,19 +46,19 @@ export default function ContactInfo({id, name, city, phone, editMode, setContact
              <div className="input-output-inner">
                   <label htmlFor="name-contactInfo" className="input">
                       <span>Name:</span>
-                      <input id="name-contactInfo" value={editName} onChange={(e)=>setEditName(e.target.value)}/>
+                      <input id="name-contactInfo" value={editName} onChange={(e)=>setEditName(e.target.value)} required />
                   </label>
               </div>
               <div className="input-output-inner">
                   <label htmlFor="city-contactInfo" className="input">
                       <span >City:</span>
-                      <input id="city-contactInfo" value={editCity} onChange={(e)=>setEditCity(e.target.value)}/>
+                      <input id="city-contactInfo" value={editCity} onChange={(e)=>setEditCity(e.target.value)} required />
                   </label>
               </div>
               <div className="input-output-inner">
                   <label htmlFor="phone-contactInfo" className="input">
                       <span>Phone No:</span>
-                      <input id="phone-contactInfo" value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)}/>
+                      <input id="phone-contactInfo" value={phoneNumber} onChange={(e)=>setPhoneNumber(e.target.value)} required />
                   </label>
               </div>
               <div className="action-buttons">
